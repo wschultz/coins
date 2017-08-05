@@ -46,4 +46,4 @@ def added_up():
   result = float(format(result, '.2f'))
   return(str(result))
 
-print(time.strftime("%d%m%y %H%M") + " " + added_up())
+print(time.strftime("%m%d%y %H%M") + " " + added_up())

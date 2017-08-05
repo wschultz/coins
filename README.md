@@ -4,14 +4,16 @@
 
 You'll need to add the following files:
 
-```private
+```
+private
 private/__init__.py
 private/credentials.py
 ```
 
 __init__.py is blank, credentials.py looks like this:
 
-```key        = '888888888888888888888888888888888'
+```
+key        = '888888888888888888888888888888888'
 b64secret  = '8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888'
 passphrase = '88888888888'
 ```

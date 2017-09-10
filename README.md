@@ -2,12 +2,14 @@
 
 ** This is a short script that totals up all your USD from LTC/ETH/BTC from your GDAX account. **
 
-You'll need to add the following files:
+You'll to do the following files:
 
 ```
-private
-private/__init__.py
-private/credentials.py
+git clone https://github.com/wschultz/coins.git
+cd coins
+mkdir private
+touch private/__init__.py
+touch private/credentials.py
 ```
 
 __init__.py is blank, credentials.py looks like this:

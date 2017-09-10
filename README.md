@@ -7,12 +7,10 @@ You'll to do the following files:
 ```
 git clone https://github.com/wschultz/coins.git
 cd coins
-mkdir private
-touch private/__init__.py
 touch private/credentials.py
 ```
 
-__init__.py is blank, credentials.py looks like this:
+Edit private/credentials.py to looks like this, except with your keys:
 
 ```
 key        = '888888888888888888888888888888888'

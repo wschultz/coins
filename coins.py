@@ -3,18 +3,6 @@
 """ 
     This is a short script that totals up all your USD from LTC/ETH/BTC from your GDAX account.
 
-private is setup as:
-
-[wschultz]$ find private
-private
-private/__init__.py
-private/credentials.py
-
-[wschultz]$ cat private/credentials.py
-key        = '888888888888888888888888888888888'
-b64secret  = '8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888'
-passphrase = '88888888888'
-
 """
 
 import private.credentials

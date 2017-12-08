@@ -1,19 +1,29 @@
 #!/usr/bin/env python
-import os
 import requests
+import private.holdings
+
+"""
+
+    This is a short script that totals up all your holdings and outputs a total USD amount.
+
+    Create private/holdings.py
+
+    Example:
+      $cat private/holdings.py
+      class Holdings(object):
+        omg = 100       # Bittrex
+        btc = 6         # GDAX
+        xrp = 1000      # Bitstamp
+
+"""
 
 currency = "https://api.coinmarketcap.com/v1/ticker/"
 
 r = requests.get(currency)
 results = r.json()
 
-### START EDIT HERE ###
-omg = 84.4215   # Bittrex
-btc = 2.1435370 # GDAX
-xrp = 6328.8837 # Bitstamp
-
-myholdings = {"omg": omg, "btc": btc, "xrp": xrp}
-#### END EDIT HERE ####
+myholdings = {k:v for k, v in private.holdings.Holdings.__dict__.items() 
+              if not (k.startswith('__'))}
 
 totals = []
 total = 0

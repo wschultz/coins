@@ -1,0 +1,5 @@
+class Holdings(object):
+  omg = 100       # Bittrex
+  btc = 6         # GDAX
+  xrp = 1000      # Bitstamp
+
